@@ -1,0 +1,11 @@
+<h1>Hello World</h1>
+Inspecting params: <%= params.inspect %><br>
+
+  <form action="/" method="get">
+  <% if params[:user] %>
+    <% usr = params[:user] %>
+   <%= usr  %> not found!
+  <% end %>
+  	<input type="hidden" name="user">
+  	<input type="hidden" name"pass">
+  </form>
